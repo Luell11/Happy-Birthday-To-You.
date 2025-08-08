@@ -1,0 +1,175 @@
+@font-face {
+    font-family: myfont;
+    src: url(Greatvibes-Regular.ttf);
+
+}
+
+body {
+    background-image: linear-gradient(to right, pink , #eebee6);
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+
+.container h1 {
+    color: rgb(252, 23, 149);
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-size: 96px;
+}
+
+.container h4 {
+    color: rgb(179, 12, 104);
+    font-style: italic;
+    font-family: "Sans-serif", cursive;
+    font-size: 20px;
+}
+
+
+.specialmessage {
+    display: none;
+    margin: 200px auto; /* centers horizontally */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    font-style: italic;
+    font-family: "Sans-serif", cursive; 
+    background-color: #e28ec3;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    width: 200px;
+    
+    /* Center text inside the box */
+
+    align-items: center;  /* vertical center */
+    justify-content: center; /* horizontal center */
+    text-align: center; /* multi-line center */
+    height: 800px;
+    width: 1500px;
+
+}
+
+.specialmessage h4 {
+    color: white;
+}
+
+
+.specialmessage h1 {
+    color: white;
+    font-family: "Dancing Script", cursive;
+}
+.akoayisangcontainer {
+    background-color: aqua;
+}
+
+#yellow {
+    color:yellow;
+    
+}
+
+
+
+button {
+    background-image: linear-gradient(rgb(255, 0, 212), rgb(238, 9, 181));
+    color: white;
+    font-style: arial;
+    font-size: 20px;
+    border: none;
+    padding: 12px 24px;
+    border-radius:  30px;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Sans-serif", cursive;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff1493, #c71585); /* Slightly darker on hover */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.Pictures {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700%;
+    margin: auto;
+}
+
+.pic-container {
+    position: relative;
+    display: inline-block;
+}
+
+.Pictures img {
+    width: 250px;
+    height: auto;
+    display: block;
+    border: 2px solid grey;
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 97%;
+    background: rgba(0, 0, 0, 0.144); /* Transparent black */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+/* Show overlay on hover */
+.pic-container:hover .overlay {
+    opacity: 1;
+}
+
+.Pictures{
+    display: none;
+}
+
+.hearts, .stars, .butterfly {
+    font-size: 23px;
+    font-weight: bold;
+    top: -1vh;
+    transform: translateY(0%);
+    left: 0;
+    animation: fall 3s ease-in infinite;
+    position: fixed;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(250vh);
+    }
+}
+
+
+footer {
+    background-color: black;
+    display: none;
+}
+.footer-container {
+    color: white;
+    
+}
